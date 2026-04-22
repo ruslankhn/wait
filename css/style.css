@@ -591,6 +591,13 @@ main {
   .comments__text {
     font-size: 16px;
   }
+  .complete {
+    position: relative;
+  }
+  .complete__scroll {
+    background: unset;
+    box-shadow: none;
+  }
   .footer {
     margin-top: 8px;
   }
