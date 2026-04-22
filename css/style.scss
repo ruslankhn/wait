@@ -1,0 +1,731 @@
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Thin.woff2') format('woff2'),
+        url('../fonts/Switzer-Thin.woff') format('woff'),
+        url('../fonts/Switzer-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-ThinItalic.woff') format('woff'),
+        url('../fonts/Switzer-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Extralight.woff2') format('woff2'),
+        url('../fonts/Switzer-Extralight.woff') format('woff'),
+        url('../fonts/Switzer-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-ExtralightItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-ExtralightItalic.woff') format('woff'),
+        url('../fonts/Switzer-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Light.woff2') format('woff2'),
+        url('../fonts/Switzer-Light.woff') format('woff'),
+        url('../fonts/Switzer-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-LightItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-LightItalic.woff') format('woff'),
+        url('../fonts/Switzer-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Regular.woff2') format('woff2'),
+        url('../fonts/Switzer-Regular.woff') format('woff'),
+        url('../fonts/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Italic.woff2') format('woff2'),
+        url('../fonts/Switzer-Italic.woff') format('woff'),
+        url('../fonts/Switzer-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Medium.woff2') format('woff2'),
+        url('../fonts/Switzer-Medium.woff') format('woff'),
+        url('../fonts/Switzer-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-MediumItalic.woff') format('woff'),
+        url('../fonts/Switzer-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Semibold.woff2') format('woff2'),
+        url('../fonts/Switzer-Semibold.woff') format('woff'),
+        url('../fonts/Switzer-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Switzer-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Bold.woff2') format('woff2'),
+        url('../fonts/Switzer-Bold.woff') format('woff'),
+        url('../fonts/Switzer-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-BoldItalic.woff') format('woff'),
+        url('../fonts/Switzer-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Extrabold.woff2') format('woff2'),
+        url('../fonts/Switzer-Extrabold.woff') format('woff'),
+        url('../fonts/Switzer-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-ExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/Switzer-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Black.woff2') format('woff2'),
+        url('../fonts/Switzer-Black.woff') format('woff'),
+        url('../fonts/Switzer-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-BlackItalic.woff') format('woff'),
+        url('../fonts/Switzer-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Variable.woff2') format('woff2'),
+        url('../fonts/Switzer-Variable.woff') format('woff'),
+        url('../fonts/Switzer-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-VariableItalic.woff2') format('woff2'),
+        url('../fonts/Switzer-VariableItalic.woff') format('woff'),
+        url('../fonts/Switzer-VariableItalic.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F1F5F8;
+    font-family: 'Switzer';
+}
+
+html,
+body {
+    min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+main {
+    padding: 24px 0 6px;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h1 {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: -2%;
+        text-transform: capitalize;
+        color: #1A1A1A;
+        text-align: center;
+    }
+
+    & p {
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1A1A1A;
+        text-align: center;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #000000;
+
+        & svg {
+            width: 107px;
+        }
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8px;
+    padding: 24px 8px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 6px 16px 0px #0000001A;
+
+    &__product {
+        max-width: 122px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 204px;
+        width: 100%;
+
+        &__image {
+            display: block;
+            margin-left: -12px;
+        }
+
+        & h2 {
+            margin-top: 16px;
+            max-width: 178px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+
+            & span {
+                color: #40AD48;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__take-chance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 16px;
+        padding: 14px 8px;
+        background-color: #FFF4F4;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='14' ry='14' stroke='%23FF3939FF' stroke-width='2' stroke-dasharray='7%2c 7' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+        border-radius: 14px;
+
+        & svg {
+            flex-shrink: 0;
+            width: 47px;
+            height: 38px;
+        }
+
+        & p {
+            font-weight: 500;
+            font-size: 12px;
+
+            & span {
+                display: block;
+                font-weight: 500;
+                font-size: 10px;
+
+                & strong {
+                    font-size: 13px;
+                    color: #40AD48;
+                }
+            }
+        }
+    }
+
+    &__take-chance-50 {
+        font-weight: 600!important;
+        font-size: 16px!important;
+        line-height: 23px;
+        color: #40AD48;
+
+        & strong {
+            font-size: 20px!important;
+            font-weight: 600!important;
+        }
+    }
+
+    &__take-chance-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+        height: 46px;
+        margin-top: 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: linear-gradient(115.57deg, #70C37D 15.86%, #459761 81.12%), linear-gradient(99.3deg, #34A853 0%, #006E2C 100%);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            filter: brightness(1.08);
+        }
+    }
+}
+
+.advantages {
+    display: block;
+    margin-top: 24px;
+    padding: 24px 0;
+    border: 0.5px solid #BABABA;
+    border-left: none;
+    border-right: none;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        max-width: 92px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+
+        & svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.comments {
+    display: block;
+    margin-top: 24px;
+    padding: 16px;
+    border: 0.5px solid #BABABA;
+    border-radius: 16px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+
+        &:not(:last-child) {
+            padding-bottom: 18px;
+            border-bottom: 1px solid #D9D9D9;
+        }
+    }
+
+    &__item-avatar {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        & span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 12px;
+            color: #555555;
+            text-transform: capitalize;
+        }
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.complete {
+    position: sticky;
+    bottom: 0;
+    margin-top: 6px;
+    padding: 16px 0px;
+    transition: .2s ease all;
+
+    &__scroll {
+        background: #FFFFFF;
+        box-shadow: 0px -4px 10px 0px #0000002E;
+    }
+
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        height: 56px;
+        max-width: 330px;
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient(115.57deg, #70C37D 15.86%, #459761 81.12%), linear-gradient(99.3deg, #34A853 0%, #006E2C 100%);
+        border-radius: 50px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            filter: brightness(1.08);
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 12px;
+
+        & p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1%;
+        }
+    }
+
+    &__timer-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1%;
+        text-transform: uppercase;
+    }
+}
+
+.footer {
+    margin-bottom: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-top: 48px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .title {
+
+        & h1 {
+            font-size: 48px;
+        }
+
+        & p {
+            font-size: 20px;
+        }
+
+        &__rating {
+            font-size: 16px;
+
+            & svg {
+                width: 122px;
+            }
+        }
+    }
+
+    .card {
+        justify-content: space-evenly;
+        margin-top: 32px;
+        padding: 48px 0;
+
+        &__product {
+            max-width: 180px;
+        }
+
+        &__info {
+            max-width: 460px;
+
+            & h2 {
+                max-width: unset;
+                margin-top: 24px;
+                font-size: 24px;
+            }
+        }
+
+        &__image {
+            width: 176px;
+        }
+
+        &__take-chance {
+            gap: 18px;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23FF3939FF' stroke-width='2' stroke-dasharray='9%2c 9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+
+            & svg {
+                width: 70px;
+                height: 57px;
+            }
+
+            & p {
+                font-size: 20px;
+
+                & span {
+                    font-size: 16px;
+
+                    & strong {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        &__take-chance-50 {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 22px!important;
+
+            & strong {
+                font-size: 32px!important;
+            }
+        }
+
+        &__take-chance-link {
+            max-width: 256px;
+            height: 60px;
+            margin-top: 24px;
+            padding: 14px 22px;
+            font-size: 18px;
+            line-height: 28px;
+
+            & svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .advantages {
+        margin-top: 40px;
+
+        &__content {
+            gap: 38px;
+        }
+
+        &__item {
+            flex-direction: row;
+            max-width: 216px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+
+            & svg {
+                flex-shrink: 0;
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+
+    .comments {
+        margin-top: 40px;
+        padding: 40px 32px;
+
+        &__content {
+            gap: 12px;
+        }
+
+        &__name {
+
+            & span {
+                gap: 1px;
+                font-size: 14px ;
+            }
+        }
+
+        &__date {
+            font-size: 14px;
+            line-height: 0.8;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        margin-top: 8px;
+    }
+}
