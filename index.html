@@ -243,156 +243,25 @@
         © 2026 All Rights Reserved.
     </footer>
 
-    <div class="back-button hidden">
-        <h1 class="back-button__title">Wait — Before You Go</h1>
-
-        <p class="back-button__subtitle">Take a look at what others are choosing right now.</p>
-
-        <section class="list">
-            <div class="list__item">
-                <div class="list__item-container">
-                    <div class="list__item-image">
-                        <img src="img/mens-health.png" alt="MEN'S HEALTH">
-                    </div>
-
-                    <div class="list__item-content">
-                        <p class="list__item-cat">
-                            MEN'S HEALTH
-                        </p>
-
-                        <h2 class="list__item-title">
-                            Boost testosterone levels fast
-                        </h2>
-
-                        <p class="list__item-description">
-                            See results in weeks
-                        </p>
-
-                        <a
-                            class="list__item-button"
-                            href="#"
-                        >
-                            Learn More
-
-                            <svg>
-                                <use href="#arrow-right" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="list__item">
-                <div class="list__item-container">
-                    <div class="list__item-image">
-                        <img src="img/at-risk.png" alt="WELLNESS">
-                    </div>
-
-                    <div class="list__item-content">
-                        <p class="list__item-cat">
-                            WELLNESS
-                        </p>
-
-                        <h2 class="list__item-title">
-                            Are you at risk? Check your blood sugar
-                        </h2>
-
-                        <p class="list__item-description">
-                            Doctors recommend checking
-                        </p>
-
-                        <a
-                            class="list__item-button"
-                            href="#"
-                        >
-                            Check Now
-
-                            <svg>
-                                <use href="#arrow-right" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="list__item">
-                <div class="list__item-container">
-                    <div class="list__item-image">
-                        <img src="img/weight-loss.png" alt="WEIGHT LOSS">
-                    </div>
-
-                    <div class="list__item-content">
-                        <p class="list__item-cat">
-                            WEIGHT LOSS
-                        </p>
-
-                        <h2 class="list__item-title">
-                            Melt stubborn belly fat fast
-                        </h2>
-
-                        <p class="list__item-description">
-                            Burn fat faster
-                        </p>
-
-                        <a
-                            class="list__item-button"
-                            href="#"
-                        >
-                            Start Now
-
-                            <svg>
-                                <use href="#arrow-right" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="list__item">
-                <div class="list__item-container">
-                    <div class="list__item-image">
-                        <img src="img/sleep-health.png" alt="SLEEP HEALTH">
-                    </div>
-
-                    <div class="list__item-content">
-                        <p class="list__item-cat">
-                            SLEEP HEALTH
-                        </p>
-
-                        <h2 class="list__item-title">
-                            Trouble sleeping? Fix it tonight
-                        </h2>
-
-                        <p class="list__item-description">
-                            Sleep deeper tonight
-                        </p>
-
-                        <a
-                            class="list__item-button"
-                            href="#"
-                        >
-                            Sleep Better
-
-                            <svg>
-                                <use href="#arrow-right" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="no-thanks">
-            <a
-                class="no-thanks__link"
-                href="#"
-            >
-                No thanks, I'll pass
-            </a>
-        </section>
-    </div>
-
     <script>
+        (function () {
+            const redirectUrl = "/wait-before-you-go.html";
+            let redirected = false;
+
+            // Добавляем дополнительное состояние в историю
+            history.pushState({ backIntercept: true }, "", location.href);
+
+            // Ловим нажатие назад
+            window.addEventListener("popstate", function () {
+                if (redirected) return;
+
+                redirected = true;
+
+                // Переводим на back offer page
+                window.location.replace(redirectUrl);
+            });
+        })();
+        
         document.addEventListener('DOMContentLoaded', () => {
             const stickyBlock = document.querySelector('.complete');
 
@@ -445,30 +314,6 @@
 
                 updateTimer();
             }, 1000);
-
-
-            const wait = document.getElementById('wait');
-            const backButton = document.querySelector('.back-button');
-            const footer = document.querySelector('.footer');
-            let switched = false;
-
-            function lockBack() {
-                history.pushState({ locked: true }, '', location.href);
-            }
-
-            lockBack();
-
-            window.addEventListener('popstate', () => {
-                if (!switched) {
-                    switched = true;
-                    wait.classList.add('hidden');
-                    footer.classList.add('hidden');
-                    backButton.classList.remove('hidden');
-                    window.scrollTo(0, 0);
-                }
-
-                lockBack();
-            });
         });
     </script>
 </body>
