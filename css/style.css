@@ -192,7 +192,7 @@ main {
 }
 .title h1 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   letter-spacing: -2%;
   text-transform: capitalize;
   color: #1A1A1A;
@@ -200,7 +200,7 @@ main {
 }
 .title p {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: #1A1A1A;
   text-align: center;
@@ -211,7 +211,7 @@ main {
   gap: 8px;
   margin-top: 8px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: capitalize;
   color: #000000;
 }
@@ -251,8 +251,8 @@ main {
   margin-top: 16px;
   max-width: 178px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-transform: capitalize;
 }
 .card__info h2 span {
@@ -277,25 +277,25 @@ main {
 }
 .card__take-chance p {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .card__take-chance p span {
   display: block;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 .card__take-chance p span strong {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #40AD48;
 }
 .card__take-chance-50 {
   font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 23px;
+  font-size: 1rem !important;
+  line-height: 1.438rem;
   color: #40AD48;
 }
 .card__take-chance-50 strong {
-  font-size: 20px !important;
+  font-size: 1.25rem !important;
   font-weight: 600 !important;
 }
 .card__take-chance-link {
@@ -308,8 +308,8 @@ main {
   margin-top: 20px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   color: #FFFFFF;
   background: linear-gradient(115.57deg, #70C37D 15.86%, #459761 81.12%), linear-gradient(99.3deg, #34A853 0%, #006E2C 100%);
   text-decoration: none;
@@ -341,8 +341,8 @@ main {
   gap: 12px;
   max-width: 92px;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 14px;
+  font-size: 0.8125rem;
+  line-height: 0.875rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -396,17 +396,17 @@ main {
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #555555;
   text-transform: capitalize;
 }
 .comments__date {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .comments__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .complete {
@@ -433,8 +433,8 @@ main {
   border-radius: 50px;
   font-family: Poppins;
   font-weight: 600;
-  font-size: 23px;
-  line-height: 22px;
+  font-size: 1.438rem;
+  line-height: 1.375rem;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
@@ -453,7 +453,7 @@ main {
 .complete__bottom p {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 1%;
 }
 .complete__timer-block {
@@ -463,7 +463,7 @@ main {
   gap: 2px;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 1%;
   text-transform: uppercase;
 }
@@ -472,7 +472,7 @@ main {
   margin-bottom: 24px;
   font-family: Poppins;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
 }
 
@@ -484,13 +484,13 @@ main {
     max-width: 1000px;
   }
   .title h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   .title p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .title__rating {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .title__rating svg {
     width: 122px;
@@ -509,7 +509,7 @@ main {
   .card__info h2 {
     max-width: unset;
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .card__image {
     width: 176px;
@@ -526,29 +526,29 @@ main {
     height: 57px;
   }
   .card__take-chance p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .card__take-chance p span {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .card__take-chance p span strong {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .card__take-chance-50 {
     margin-top: 12px;
     text-align: center;
-    font-size: 22px !important;
+    font-size: 1.375rem !important;
   }
   .card__take-chance-50 strong {
-    font-size: 32px !important;
+    font-size: 2rem !important;
   }
   .card__take-chance-link {
     max-width: 256px;
     height: 60px;
     margin-top: 24px;
     padding: 14px 22px;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
   .card__take-chance-link svg {
     width: 32px;
@@ -563,8 +563,8 @@ main {
   .advantages__item {
     flex-direction: row;
     max-width: 216px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     text-align: left;
   }
   .advantages__item svg {
@@ -581,14 +581,14 @@ main {
   }
   .comments__name span {
     gap: 1px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .comments__date {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 0.8;
   }
   .comments__text {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .complete {
     position: relative;
@@ -613,8 +613,8 @@ main {
 .back-button__title {
   margin-bottom: 16px;
   font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   letter-spacing: -1.5px;
   text-align: center;
 }
@@ -622,8 +622,8 @@ main {
   max-width: 342px;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   text-align: center;
 }
 
@@ -665,8 +665,8 @@ main {
 .list__item-cat {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #46464A;
@@ -674,8 +674,8 @@ main {
 .list__item-title {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
   letter-spacing: -0.6px;
 }
 .list__item-button {
@@ -688,8 +688,8 @@ main {
   background-color: #030304;
   border-radius: 9999px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.2s ease;
@@ -709,8 +709,8 @@ main {
 .no-thanks__link {
   position: relative;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   text-align: center;
   text-decoration: none;
   color: #46464A;
