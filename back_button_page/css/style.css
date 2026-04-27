@@ -50,8 +50,8 @@ main {
 .title {
   margin-bottom: 16px;
   font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875;
+  line-height: 2rem;
   letter-spacing: -1.5px;
   text-align: center;
 }
@@ -60,8 +60,8 @@ main {
   max-width: 342px;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
   text-align: center;
 }
 
@@ -103,8 +103,8 @@ main {
 .list__item-cat {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.8rem;
+  line-height: 1rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #46464A;
@@ -112,8 +112,8 @@ main {
 .list__item-title {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
   letter-spacing: -0.6px;
 }
 .list__item-button {
@@ -126,8 +126,8 @@ main {
   background-color: #030304;
   border-radius: 9999px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.2s ease;
@@ -147,8 +147,8 @@ main {
 .no-thanks__link {
   position: relative;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
   text-align: center;
   text-decoration: none;
   color: #46464A;
