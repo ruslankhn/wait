@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="text-scale" content="scale">
     <title>Wait! Your Order Is Not Complete</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,18 @@
             <path d="M7.10208 5.25H0V4.08333H7.10208L3.83542 0.816667L4.66667 0L9.33333 4.66667L4.66667 9.33333L3.83542 8.51667L7.10208 5.25Z" fill="white" />
         </symbol>
     </svg>
+
+    <div class="popup" id="discountPopup">
+        <div class="popup__container">
+            <h4 class="popup__title">
+                Claim your discount now before it’s gone!
+            </h4>
+
+            <button class="popup__btn" type="button" id="discountPopupBtn">
+                Get discount
+            </button>
+        </div>
+    </div>
 
     <main id="wait">
         <div class="container">
@@ -314,6 +327,20 @@
 
                 updateTimer();
             }, 1000);
+
+            const popup = document.getElementById('discountPopup');
+            const closeBtn = document.getElementById('discountPopupBtn');
+
+            function closePopup() {
+                popup.style.display = 'none';
+                document.body.classList.remove('popup-lock');
+            }
+
+            [popup, closeBtn].forEach(e => {
+                e.addEventListener('click', () => {
+                    closePopup();
+                });
+            });
         });
     </script>
 </body>

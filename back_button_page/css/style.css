@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@supports (font: -apple-system-body) and (not (-webkit-touch-callout: default)) {
+    :root {
+        font-size: 100%;
+    }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,6 +24,8 @@ body {
 html,
 body {
   min-width: 320px;
+  font-size: 100%;
+  font: -apple-system-body;  
 }
 
 h1,

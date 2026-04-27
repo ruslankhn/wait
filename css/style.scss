@@ -199,6 +199,12 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@supports (font: -apple-system-body) and (not (-webkit-touch-callout: default)) {
+    :root {
+        font-size: 100%;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -217,6 +223,8 @@ body {
 html,
 body {
     min-width: 320px;
+    font-size: 100%;
+    font: -apple-system-body;  
 }
 
 h1,
@@ -736,4 +744,61 @@ main {
     .footer {
         margin-top: 8px;
     }
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.5);
+
+    &__container {
+        width: 100%;
+        max-width: 500px;
+        padding: 32px;
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1019607843);
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0 0 32px;
+        color: #111827;
+        font-size: 2.4rem;
+        line-height: 1.25;
+        font-weight: 800;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: #FFFFFF;
+        background: linear-gradient(115.57deg, #70C37D 15.86%, #459761 81.12%), linear-gradient(99.3deg, #34A853 0%, #006E2C 100%);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+            filter: brightness(1.08);
+        }
+    }
+}
+
+body.popup-lock {
+    overflow: hidden;
 }
